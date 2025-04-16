@@ -1,207 +1,211 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=devide-width, initial-scale=1.0">
     <title>El Faro</title>
-    <style>
-        table,
-        th,
-        td {
-            border: 1px solid black;
-        }
-
-        .menu ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-        }
-
-        .menu {
-            background-color: #333;
-            padding: 10px;
-        }
-
-        .menu ul li {
-            margin: 0;
-            padding: 0;
-        }
-
-        .menu ul li a {
-            display: block;
-            padding: 10px 20px;
-            color: white;
-            text-decoration: none;
-        }
-    </style>
+    <script src="https://kit.fontawesome.com/84b3b37f1a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 
 <body>
-
+    <!--Header Menu-->
     <header>
-        <center>
-            <h1>Bien benido a el Faro</h1>
-        </center>
-        <center><img alt="Foto el Faro" width="100" src="faro.png"></center>
-        <nav class="menu">
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Deportes</a></li>
-                <li><a href="#">Finanzas</a></li>
-        </nav>
+
+        <div class="barra-hora">
+            <span id="reloj"></span>
+        </div>
+
+        <div class="header-content">
+
+            <div class="logo">
+                <h1>El<b>Faro</b></h1>
+
+            </div>
+
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li class="menu-selected"><a href="index.html" class="text-menu-selected">Inicio</a></li>
+                        <li><a href="mundial.html">Noticias</a></li>
+                        <li><a href="Deportes.html">Deportes</a></li>
+                        <li><a href="Finanzas.html">Finanzas</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+
     </header>
 
-    <div class="Noticias">
-        <h2>Ultimas Noticias</h2>
-        <table>
-            <tr>
-                <th>Titulo</th>
-                <th>Categoria</th>
-                <th>Descripcion</th>
-            </tr>
-            <tr>
-                <td>Terremoto en Tailandia</td>
-                <td>Mundial</td>
-                <td>
-                    <p>Un potente terremoto sacude Myanmar: Un terremoto de magnitud 7,7 se registró en Myanmar, cerca
-                        de la ciudad de Mandalay, con temblores que se sintieron en Tailandia y China. En Myanmar, donde
-                        también se produjo una fuerte réplica de magnitud 6,4, hay al menos 144 personas muertas y más
-                        de 730 heridas, según el jefe del gobierno militar del país.
-                    </p>
-                </td>
-            </tr>
-            <tr>
-                <td>Israel ataca el sur de Beirut</td>
-                <td>Mundial</td>
-                <td>
-                    <p>
-                        Las fuerzas de Israel atacaron este viernes el sur de Beirut por primera vez desde el alto el
-                        fuego de noviembre, después de que Israel informara de dos proyectiles disparados desde el
-                        Líbano.</p>
-                </td>
-            </tr>
-            <tr>
-                <td>Un cohete orbital se estrella segundos después despegar</td>
-                <td>Mundial</td>
-                <td>
-                    <p>
-                        El cohete orbital de una empresa emergente alemana giró y se estrelló segundos después del
-                        despegue este domingo, en un inusual vuelo de prueba europeo que, según sus creadores, “cumplió
-                        con los objetivos establecidos”</p>
-                </td>
-            </tr>
-        </table>
+    <!--Portada-->
+    <div class="container-cover">
 
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/xTDSmHIW_mE?si=AKAQoIxAWiSMctcr"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-        </iframe> <br>
-        <audio controls>
-
-            <source src="audio.mp3" type="audio/mpeg">
-
-        </audio>
-
+        <div class="container-info-cover">
+            <h1>El Faro: luz en medio de la información</h1>
+            <p>No solo informamos, guiamos. Cada noticia que ves, cada historia que lees, tiene un propósito: ayudarte a
+                ver más claro</p>
+        </div>
 
     </div>
 
-    <div class="Deportes">
-        <h2>Deportes</h2>
-        <table>
-            <tr>
-                <th>Titulo</th>
-                <th>Categoria</th>
-                <th>Descripcion</th>
-            </tr>
-            <tr>
-                <td>Real Madrid - Leganés</td>
-                <td>Futbol</td>
-                <td>
-                    <p>El Real Madrid sufrió de lo lindo para ganar al Leganés. Tres puntos que le permiten seguir vivo
-                        en la lucha por LaLiga, pero que deja más sombras que luces en el equipo blanco. Una victoria
-                        marcada por la polémica por un penalti y una falta más que dudosos que significaron dos goles de
-                        Mbappé.</p>
-                </td>
-            </tr>
-            <tr>
-                <td>Lewandowski hace posible lo imposible</td>
-                <td>Futbol</td>
-                <td>
-                    <p>
-                        BARCELONA -- Robert Lewandowski ya suma 97 goles en 137 partidos oficiales con el Barça. En el
-                        fútbol moderno solo Luis Suárez (113 dianas en sus primeros 137 encuentros de azulgrana) supera
-                        los promedios del delantero polaco, que en el campeonato liguero alcanzó este domingo 25 dianas,
-                        líder en la clasificación de realizadores... Y vital para entender el liderato de este Barça
-                        lanzado..</p>
-                </td>
-            </tr>
-            <tr>
-                <td>Lakers ganó en Memphis en un duelo clave del Oeste, dominado por el Thunder</td>
-                <td>Basquetbol</td>
-                <td>
-                    <p>
-                        Los Lakers y los Grizzlies llegaban empatados en la tabla a este partido y ambos con sabor
-                        amargo reciente, en el caso de los angelinos por la increíble derrota ante los Bulls con un
-                        milagroso triple desde la mitad de la cancha de Josh Giddey y en el de Memphis por el
-                        sorprendente despido el viernes de su entrenador Taylor Jenkins.</p>
-                </td>
-            </tr>
-        </table>
+    <div class="container-content">
+
+        <div class="content-principal">
+
+            <div class="contador-articulos-wrapper">
+                <!-- Aquí se insertará el contador con JS -->
+            </div>
+
+            <article>
+                <h1>El fin de una era: LeBron James pone fin a una increíble racha ¡de 20 años!</h1>
+
+                <p>A sus 40 años, LeBron cerrará su vigesimosegunda temporada promediando 24,4 puntos por encuentro, una
+                    cifra ligeramente inferior a lo que ha acostumbrado a registrar desde su segundo año en la NBA y su
+                    segunda 'peor' marca anotadora de su carrera (20,9 puntos en su año rookie). Así pues, 'King' James
+                    pondrá fin a una racha de 20 temporadas anotando 25+ puntos por partido, unos números que hacen de
+                    esa
+                    racha una marca histórica y prácticamente imbatible a largo plazo.
+                </p>
+
+                <p>
+                    Por otro lado, James ya estuvo cerca de poner fin a su racha de promediar 25+ puntos por partido en
+                    su
+                    tercera temporada en los Lakers, en 2020/21, un año en el que registró 25,0 puntos exactos en 45
+                    partidos. Al año siguiente, éste logró firmó su segunda mejor marca anotadora de su carrera, con
+                    30,3
+                    puntos, acercándose a los 31,4 puntos de promedio en su tercera temporada en la NBA.
+                </p>
+
+                <img src="img/lebron.png" alt="">
+
+                <p>
+                    Después de 22 temporadas y a sus 40 años de edad, James continúa mostrándose como uno de los
+                    jugadores
+                    más consistentes de toda la historia de la liga en cuanto a números se refiere. Tras finalizar esta
+                    temporada, los promedios de carrera de LeBron serán de 27,0 puntos, 7,5 rebotes y 7,4 asistencias.
+                </p>
+
+
+            </article>
+
+            <article>
+                <h1>Gran incendio afecta a vivienda de tres pisos en el centro de Puerto Montt</h1>
+
+                <p> Un gran incendio se registró la noche de este sábado en una vivienda de tres pisos en el centro de
+                    Puerto Montt, en la región de Los Lagos. La emergencia se generó en un inmueble emplazado en calle
+                    Huasco con Egaña.
+                    Diversas unidades de Bomberos están trabajando en controlar el fuego y evitar su propagación a las
+                    casas
+                    pareadas.
+                </p>
+
+                <p>
+                    También acudió personal de Carabineros para despejar el lugar debido a la gran cantidad de personas
+                    que
+                    se congregó a observar este siniestro. De momento se desconoce cómo se originó el fuego, pero
+                    auditores
+                    indicaron que se trataría de una casa okupa que ya se había incendiado hace unos años. Víctor
+                    Oyarzún,
+                    segundo comandante de Bomberos, informó que el fuego se propagó por el entretecho a un
+                    domicilio ubicado al lado de la casa siniestrada.
+                </p>
+
+                <img src="img/incendio.png" alt="">
+
+                <p>
+                    Además, confirmó que la vivienda inicialmente afectada resultó completamente destruida, ya que
+                    presentaba graves daños por un incendio anterior. En el lugar trabajaron aproximadamente 150
+                    bomberos y
+                    el Departamento de Investigación de Incendios determinará qué originó las llamas.
+                </p>
+
+
+            </article>
+
+            <div class="content-formulario">
+
+                <h2>Agregar nuevo articulo</h2>
+                <input type="text" id="titulo-nuevo" placeholder="Titulo del articulo">
+                <textarea id="contenido-nuevo" placeholder="Contenido nuevo"></textarea>
+
+                <select id="seccion-articulo">
+                    <option value="deportes">Deportes</option>
+                    <option value="mundial">Mundial</option>
+                    <option value="finanzas">Finanzas</option>
+                </select>
+
+                <button id="btn-agregar">Agregar Articulo</button>
+
+            </div>
+
+            <div class="formulario-contacto">
+                <h2>Contáctanos</h2>
+                <input type="text" id="nombre-contacto" placeholder="Tu nombre">
+                <textarea id="mensaje-contacto" placeholder="Escribe tu mensaje..."></textarea>
+                <button id="btn-enviar-contacto">Enviar mensaje</button>
+            </div>
+
+        </div>
+
+
+
+        <div class="container-aside">
+
+            <aside>
+                <img src="img/real.png" alt="">
+                <h2>Alavés - Real Madrid: resultado, resumen y goles | LaLiga EA Sports de fútbol</h2>
+                <p>Con lo justo y necesario. Así venció el Real Madrid en Mendizorroza al Alavés (0-1) en un partido en
+                    el que, en cuestión de minutos.
+                </p>
+                <a href="Deportes.html"><button>leer mas</button></a>
+            </aside>
+
+            <aside>
+                <img src="img/incendio.png" alt="">
+                <h2>Gran incendio afecta a vivienda de tres pisos en el centro de Puerto Montt</h2>
+                <p>Un gran incendio se registró la noche de este sábado en una vivienda de tres pisos en el centro de
+                    Puerto Montt, en la región de Los Lagos.
+                </p>
+                <a href="mundial.html"><button>leer mas</button></a>
+            </aside>
+
+
+            <aside>
+                <img src="img/bukele.png" alt="">
+                <h2>Bukele llega a EEUU para reunirse con Donald Trump: tratarán temas de migración</h2>
+                <p>El presidente de El Salvador, Nayib Bukele, llegó este sábado a Estados Unidos para reunirse con un
+                    par estadounidense, Donald Trump.
+                </p>
+                <a href="mundial.html"><button>leer mas</button></a>
+            </aside>
+
+        </div>
 
     </div>
 
-    <div class="Finanzas">
-        <h2>Finanzas</h2>
-        <table>
-            <tr>
-                <th>Titulo</th>
-                <th>Categoria</th>
-                <th>Descripcion</th>
-            </tr>
-            <tr>
-                <td>Cencosud compra su primera startup: es uruguaya</td>
-                <td>Internacional</td>
-                <td>
-                    <p>A mediados de 2021 nació Cencosud Ventures, el brazo de inversión de riesgo del retailer nacional
-                        fundado por Horst Paulmann. En octubre de 2023 invirtieron US$ 2 millones en Vopero, una startup
-                        uruguaya de compra y venta de ropa de segunda mano. La semana pasada esa inversión pasó a ser
-                        una adquisición y ahora Cencosud es dueño de casi el 100% de la firma fundada por Maggie Ferber,
-                        Alejandro Esperanza e Ignacio Cattivelli.</p>
-                </td>
-            </tr>
-            <tr>
-                <td>Confianza de consumidores chilenos cae con fuerza en marzo y solo un 28% cree que la economía
-                    mejorará</td>
-                <td>Nacional</td>
-                <td>
-                    <p>
-                        Un informe de IPSOS reveló que en marzo la confianza de los consumidores chilenos sufrió un
-                        fuerte descenso de 4,6 puntos. Con esto se ubicó en 40,8, el nivel más bajo desde 2025. Esta
-                        caída fue la primera de 2025. Y con el resultado Chile se posicionó en el puesto 25 entre las 29
-                        economías medidas, por debajo del promedio global (48,2) y latinoamericano (47,8), siendo además
-                        el país con el puntaje más bajo de la región.</p>
-                </td>
-            </tr>
-            <tr>
-                <td>Codelco cerró 2024 con leve aumento de producción y un aporte al Fisco de US$1.534 millones empujado
-                    por precio del cobre</td>
-                <td>Nacional</td>
-                <td>
-                    <p>
-                        Codelco entregó esta mañana sus resultados de 2024. Según informó la estatal, su producción
-                        total de cobre en el periodo llegó a las 1.442 millones de toneladas, cifra que representa un
-                        aumento de 1% frente al año anterior. Su producción propia, sin considerar sus participación en
-                        El Abra y Anglo American Sur, llegó las 1,328 millones de toneladas. Este número representa un
-                        alza de 0,3% respecto al 2023.</p>
-                </td>
-            </tr>
-        </table>
+    <div class="container-footer">
+
+        <footer>
+            <div class="logo-footer">
+                <img src="img/Elfaro.png" alt="">
+            </div>
+
+            <div class="redes-footer">
+                <a href=""><i class="fa-brands fa-facebook icon-redes-footer"></i></a>
+                <a href=""><i class="fa-brands fa-instagram icon-redes-footer"></i></a>
+                <a href=""><i class="fa-brands fa-x-twitter icon-redes-footer"></i></a>
+            </div>
+
+            <hr>
+            <h4>&copy; 2025 El Faro. Todos los derechos reservados.</h4>
+
+        </footer>
 
     </div>
 
-
+    <script src="config.js"></script>
 </body>
 
 </html>
