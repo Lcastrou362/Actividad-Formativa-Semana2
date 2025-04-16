@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+}
+
+
+
+header {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    /* Color de fondo*/
+    box-shadow: 0 4px 25px -22px black;
+    /* para agregar una sombra, el 0 hace referencia a que no tendra movimiento, 4px son 4 pixeles hacia abajo, 25px es el desbanecimiento de la sombra, -22 es el desbanecimiento de la sombra*/
+    z-index: 2;
+    /*Asegura que nuesnto header quede arriba de todo*/
+}
+
+.barra-hora {
+    width: 100%;
+    background-color: #f5f5f5;
+    color: #555;
+    text-align: right;
+    padding: 5px 20px;
+    font-size: 14px;
+    font-family: "Source Code Pro", monospace;
+    border-bottom: 1px solid #ddd;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    /*Pone los objetos unos al lado del otro*/
+    justify-content: space-between;
+    /*Deja los conteniddos en diferentes extremos*/
+
+}
+
+.logo {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo h1 b {
+    color: #46a2fd;
+}
+
+.menu {
+    height: 100px;
+}
+
+.menu nav {
+    height: 100%;
+}
+
+.menu nav ul {
+    height: 100%;
+    display: flex;
+    list-style: none;
+}
+
+.menu nav ul li {
+    height: 100%;
+    margin: 0px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.menu-selected:before {
+    content: '';
+    width: 100%;
+    height: 4px;
+    background-color: #46a2fd;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.menu nav ul li a {
+    color: #777777;
+    transition: color 300ms;
+}
+
+.menu nav ul li a:hover {
+    color: #46a2fd;
+}
+
+.menu .text-menu-selected {
+    color: #46a2fd;
+}
+
+/*Portada*/
+
+.container-cover {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    margin-top: 100px;
+    background-image: url(../img/faro3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container-cover::before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    background-color: rgba(38, 172, 255, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.container-info-cover {
+    max-width: 800px;
+    height: 500px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.container-info-cover h1 {
+    font-size: 60px;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.container-info-cover p {
+    font-size: 20px;
+    font-weight: 300;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/*Contenedor del articulo*/
+
+.container-content {
+    width: 1200px;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.ccontent-principal {
+    flex: 1;
+}
+
+.contador-articulos-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+article {
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 40px;
+    box-shadow: -10px 0 20px -30px black;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+}
+
+article::before {
+    content: '';
+    width: 100%;
+    height: 6px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #46a2fd;
+}
+
+article h1 {
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 40px;
+}
+
+article p {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #3c3c3c;
+}
+
+article img {
+    width: 100%;
+    margin-top: 20px;
+}
+
+/*Aside de los articulos relacionados*/
+
+.container-aside aside {
+    width: 320px;
+    border-radius: 6px;
+    box-shadow: 0 0 20px black;
+    overflow: hidden;
+    margin-left: 40px;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+}
+
+.container-aside aside img {
+    width: 100%;
+}
+
+.container-aside aside h2,
+.container-aside aside p {
+    margin-top: 20px;
+    padding: 0px 20px;
+}
+
+.container-aside aside button {
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 10px 50px;
+    font-size: 16px;
+    background-color: #46a2fd;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+/*Footer pie de pagina*/
+
+.container-footer {
+    width: 100%;
+    padding: 40px 0;
+    background-color: aliceblue;
+    margin-top: 40px;
+}
+
+.container-footer footer {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.container-footer footer .logo-footer {
+    text-align: center;
+}
+
+.container-footer footer .logo-footer img {
+    width: 100px;
+
+}
+
+.container-footer footer .redes-footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.container-footer footer .redes-footer .icon-redes-footer {
+    font-size: 20px;
+    margin: 20px;
+    background-color: whitesmoke;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    color: #a2a2a2;
+
+}
+
+.container-footer footer .redes-footer .fa-facebook:hover {
+    background-color: #41579a;
+    color: white;
+}
+
+.container-footer footer .redes-footer .fa-instagram:hover {
+    background: linear-gradient(to top right, #FCDE30, #E9712A, #D2313B, #AE4198, #7540A1, #5443A8);
+    color: white;
+}
+
+.container-footer footer .redes-footer .fa-x-twitter:hover {
+    background-color: black;
+    color: white;
+}
+
+.container-footer footer hr {
+    margin-top: 20px;
+    border: none;
+    height: 2px;
+    background-color: #a8a8a87a;
+}
+
+.container-footer h4 {
+    text-align: center;
+    margin-top: 40px;
+    color: #8e8e8e;
+    font-weight: 500;
+}
+
+/*Contador de articulos*/
+.contador-articulos {
+    padding: 6px 14px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #edf6ff;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/*Estilo al select del formulario*/
+
+.content-formulario select {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-family: "Source Code Pro", monospace;
+}
+
+/* ===== Formulario de artículos ===== */
+
+.content-formulario {
+    background-color: #f5faff;
+    border: 1px solid #d0e3f1;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.content-formulario h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #1d3557;
+    text-align: center;
+}
+
+.content-formulario input,
+.content-formulario textarea,
+.content-formulario select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    border: 1px solid #ccd6dd;
+    border-radius: 6px;
+    background-color: #ffffff;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.content-formulario textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.content-formulario button {
+    background-color: #1d3557;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    width: 100%;
+}
+
+.content-formulario button:hover {
+    background-color: #457b9d;
+}
+
+/* ===== Formulario de contacto ===== */
+.formulario-contacto {
+    background-color: #f5faff;
+    border: 1px solid #d0e3f1;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 40px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.formulario-contacto h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #1d3557;
+    text-align: center;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    border: 1px solid #ccd6dd;
+    border-radius: 6px;
+    background-color: #ffffff;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.formulario-contacto textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.formulario-contacto button {
+    background-color: #1d3557;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    width: 100%;
+}
+
+.formulario-contacto button:hover {
+    background-color: #457b9d;
+}
